@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='design.css')}}">
+
+    </head>
+    <div class="topnav">
+        <a id="name"><i><b>Automatic Video Summarization</i></b></a>
+    </div>
+         <span id="about"><b>Developed by Sharannya, Selvi, Divyashree, Sowmya.</b></span>
+        {% block content %}{% endblock %}
+    </body>
+</html>

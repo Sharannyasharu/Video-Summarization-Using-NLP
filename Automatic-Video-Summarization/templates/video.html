@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Video Display{% endblock %}
+
+{% block content %}
+<body style = "background-image: url('../../static/backvideo.jpg');">
+<div id="load"></div>
+<h1 id="result">Here's the summary: </h1>    
+    <p>
+        <video id = "video" width="1500" height="650" controls>
+            <source src="{{url_for('static', filename='new_clip8.mov')}}" type="video/mp4">
+        </video>
+    </p>
+</body>
+
+{% endblock %}
